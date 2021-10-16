@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>    
+  
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="Bruno ZIMMER">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+	<link rel="stylesheet" href="https://anijs.github.io/lib/anicollection/anicollection.css">
+
+	<link href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+
+  <link rel="icon" type="image/png" href="img/logo.png" />
+  <title>Lill'Ception</title>
+
+  <link href="resources/bootstrap.min.css" type="text/css"  rel="stylesheet" />
+  <link href="resources/style.css" type="text/css" rel="stylesheet" />
+</head>
+
+<body>
+
+<nav class="navbar position-fixed w-100 navbar-expand-lg m-0 navbar-dark">
+    <div class="container">
+      <a href="/" class="navbar-brand">
+        <!-- Logo Image -->
+        <img src="img/Logo_titre.png" width="180" alt="" class="d-inline-block align-middle mr-2">
+      </a>
+  
+      <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"><span class="navbar-toggler-icon"></span></button>
+  
+      <div id="navbarSupportedContent" class="collapse navbar-collapse">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a href="/" class="nav-link" id="home">Accueil <span class="sr-only">(current)</span></a></li>	
+          <!-- <li class="nav-item"><a href="/presentations" class="nav-link" id="presentations">La liste</a></li>
+          <li class="nav-item"><a href="/evenements" class="nav-link" id="evenements">Evènements</a></li>
+          <li class="nav-item"><a href="/contact" class="nav-link" id="contact">Contact</a></li> -->
+          <li class="nav-item"><a href="file:///C:/Users/Bruno/Desktop/centrale/lista/site/presentations" class="nav-link" id="presentations">La liste</a></li>
+          <li class="nav-item"><a href="file:///C:/Users/Bruno/Desktop/centrale/lista/site/evenements" class="nav-link" id="evenements">Evènements</a></li>
+          <li class="nav-item"><a href="file:///C:/Users/Bruno/Desktop/centrale/lista/site/contact" class="nav-link" id="contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+</nav>
+
+  <section>
+    
+
+  <link rel="stylesheet" href="/presentations.css" />
+
+
+  <div class="toppages">
+      <div class="container">
+          <h1 class="mb-5 pl-5 display-2">La liste</h1>
+      </div>
+  </div>
+
+
+
+  <div class="mt-5 container">
+
+
+      <ul class="nav nav-tabs mb-4 flex-column flex-md-row text-center" id="myTab" role="tablist">
+          <li class="nav-item">
+              <a class="nav-link tab-pane active px-3" id="trombi-tab" data-toggle="tab" href="#Trombinoscope" role="tab" aria-controls="Trombinoscope" aria-selected="true">Trombinoscope</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link tab-pane px-3" id="Programme-tab" data-toggle="tab" href="#Programme" role="tab" aria-controls="Programme" aria-selected="false">Programme</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link tab-pane px-3" id="film-liste-tab" data-toggle="tab" href="#film-liste" role="tab" aria-controls="film-liste" aria-selected="false">Film de liste</a>
+          </li>
+      </ul>
+    
+      <div class="tab-content" id="nav-tabContent">
+          <div class="tab-pane fade show active" id="Trombinoscope" role="tabpanel" aria-labelledby="trombi-tab">
+              <h1 class="text-center font-weight-bold py-3">Le bureau</h1>
+              <div class="row">
+                
+                  <div class="col-lg-4 col-12 text-center" data-aos="fade-up" data-aos-duration="500" data-aos="fade-up">
+                      <img src="../img/trombi/noé.jpg" class="presentation p-5 img-fluid" alt="Le Prez" onclick="document.getElementById('noe_big').style.display='block'">
+                      <p class="plus" onclick="document.getElementById('noe_big').style.display='block'">En savoir plus</p>
+                      <figcaption class="h2 font-weight-bold">Le Prez</figcaption>
+                      <figcaption class="h5 font-italic">Marmelade</figcaption>
+                      <div id="noe_big" class="description" >
+                      <div class="container">
+                              <button type="button" class="close" aria-label="Close" onclick="document.getElementById('noe_big').style.display='none'">
+                                 <span aria-hidden="true" class="text-white">&times;</span>
+                              </button>
+                              <img src="../img/trombi/noé.jpg" class="p-2 p-md-5 img-fluid" alt="Le Prez">
+                              <figcaption><h2>Noé </h2><br> Il est beau, il a le cheveu soyeux, c'est le président, voilà. Noooooonnnnnn, il y a plein de choses à dire sur cet homme ! Il est pas président pour rien, aussi à l'aise avec les gens que sur son monocycle, il n’a pas lego démesuré, il préfère construire avec...
+                                  Authentique, il n'a pas peur de se montrer singulier, autant dans ses idées de toboggan dans les escaliers, de statues hautes de trois mètres que dans ses choix de blagues, par contre il rigole pas quand son sol goutte à la bière. Son esprit créatif va-t-il lui permettre de créer un monocycle électrique et de devenir le futur Noé Musk ? Tout ce qu’on sait c’est que son ambition lui permet de surfer sur la vague bretonne du succès !
+                                  </figcaption>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-lg-4 col-12 text-center" data-aos="fade-up" data-aos-duration="500" data-aos="fade-up" data-aos-delay="50">
+                      <img src="../img/trombi/amaury.jpg" class="presentation p-5 rounded-circle img-fluid" alt="Le trez"  onclick="document.getElementById('amau_big').style.display='block'">
+                      <p class="plus" onclick="document.getElementById('amau_big').style.display='block'">En savoir plus</p>
+                      <figcaption class="h2 font-weight-bold">Le Trez</figcaption>
+                      <figcaption class="h5 font-italic">Le sobre</figcaption>
+                      <div id="amau_big" class="description" >
+                          <div class="container">
+                              <button type="button" class="close" aria-label="Close" onclick="document.getElementById('amau_big').style.display='none'">
+                                 <span aria-hidden="true" class="text-white">&times;</span>
+                              </button>
+                              <img src="../img/trombi/amaury.jpg" class="p-2 p-md-5 img-fluid" alt="Le Trez">
+                              <figcaption><h2>Amaury</h2>  <br> Expert en pari sportif, Amaury est un gars tranquille, il excelle en Excel, et sa passion c'est remplir des papiers, mais il ne se noie jamais, il a toujours pied ! La légende raconte qu'il est impossible d'échapper à ses messages qui te rappellent d'ouvir un n-ième compte pour récupérer de la thune. <br>
+                                  Ce géant du Sud maîtrise à la perfection le pointé, le cochonnet il le connait aussi bien que le cochonou ! Bien accompagné d'un jaune, grâce à sa vision en hauteur il surveille le bon déroulement des soirées, l'alcool ne parvient jamais à lui monter jusqu'à la tête."</div>
+                      </div>
+                  </div>
+                  <div class="col-lg-4 col-12 text-center" data-aos="fade-up" data-aos-duration="500" data-aos="fade-up" data-aos-delay="100">
+                      <img src="../img/trombi/héloïse.jpg" class="presentation p-5 rounded-circle img-fluid" alt="La secretaire"  onclick="document.getElementById('helo_big').style.display='block'">
+                      <p class="plus" onclick="document.getElementById('helo_big').style.display='block'">En savoir plus</p>
+                      <figcaption class="h2 font-weight-bold">La Screz</figcaption>
+                      <figcaption class="h5 font-italic">Rallye Girl</figcaption>
+                      <div id="helo_big" class="description" >
+                          <div class="container">
+                              <button type="button" class="close" aria-label="Close" onclick="document.getElementById('helo_big').style.display='none'">
+                                 <span aria-hidden="true" class="text-white">&times;</span>
+                              </button>
+                              <img src="../img/trombi/héloïse.jpg" class="p-2 p-md-5  img-fluid" alt="La Screz">
+                              <figcaption><h2>Héloïse</h2>  <br> Hello is a simple word but Héloïse préfère parler français parce qu’ici c’est la France, monsieur ! Fière de son 16ème natal, en parisienne pressée, sa parole va plus vite que sa pensée, c’est pas de sa faute elle est dynamique (namique). Cette screz aguerrie est capable de rédiger plus de CR qu’elle n’a de réu, c’est un peu pour ça qu’on ne les lit pas tous, mais ne lui dites pas, ça émousserait son enthousiasme débordant qui est une vraie force pour les Hors’Lillois. </figcaption>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+            
+              <hr class="featurette-divider my-4 bg-white"/>
+              <h1 class="text-center font-weight-bold py-3">Les respos</h1>
+              <div class="row">
+                  <div class="col-lg-4 col-12 text-center" data-aos="fade-up" data-aos-duration="500">
+                      <img src="../img/trombi/rémib.jpg" class="presentation p-5 rounded-circle img-fluid" alt="Respo voyage" onclick="document.getElementById('remib_big').style.display='block'">
+                      <p class="plus" onclick="document.getElementById('remib_big').style.display='block'">En savoir plus</p>
+                      <figcaption class="h2 font-weight-bold">Respo voyage</figcaption>
+                      <figcaption class="h5 font-italic">Airbous</figcaption>
+                      <div id="remib_big" class="description" >
+                          <div class="container">
+                              <button type="button" class="close" aria-label="Close" onclick="document.getElementById('remib_big').style.display='none'">
+                                  <span aria-hidden="true" class="text-white">&times;</span>
+                              </button>
+                              <img src="../img/trombi/rémib.jpg" class="p-2 p-md-5  img-fluid" alt="Voyage">
+                              <figcaption><h2>Rémi B.</h2> Maître du jeu de mot, Rémi manie les mots comme un pro. En jonglant avec sur son vélo, il peut s'avérer très rigolo. C'est lui le Président de Cent'roule, et il ne pédale pas dans la semoule (sauf en maths ! #teamPT). Amateur de ping-pong et de golf, on ne fera pas de blagues à deux balles là dessus. Le plus grand éloge c'est dire qu'il vient de Limoges. Pas sûr qu'il roule sur l’or il porte toujours les chemises et les tshirts à Caro...Caroligne (c'est la cousine germaine qui aime plus les rayures de Caroline). Il t'étonnera aussi en djellaba, où il sera là avec son thé pour pour te faire planer. AirBous Service sans secousse !
+                              </figcaption>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-lg-4 col-12 text-center" data-aos="fade-up" data-aos-duration="500">
+                      <img src="../img/trombi/élisa.jpg" class="presentation p-5 rounded-circle img-fluid" alt="Respo Event/WEI" onclick="document.getElementById('elisa_big').style.display='block'">
+                      <p class="plus" onclick="document.getElementById('elisa_big').style.display='block'">En savoir plus</p>
+                      <figcaption class="h2 font-weight-bold">Respo Event/WEI</figcaption>
+                      <figcaption class="h5 font-italic">Lapine</figcaption>
+                      <div id="elisa_big" class="description" >
+                          <div class="container">
+                              <button type="button" class="close" aria-label="Close" onclick="document.getElementById('elisa_big').style.display='none'">
+                                  <span aria-hidden="true" class="text-white">&times;</span>
+                              </button>
+                              <img src="../img/trombi/élisa.jpg" class="p-2 p-md-5 img-fluid" alt="Event/WEI">
+                              <figcaption><h2>Elisa</h2> Lapine-garou refoulée, on raconte qu’Élisa est la terreur des maraîchers du 49 pour son appétit sans fin de carottes. Cette découpeuse de forban à l’avis bien tranché ne ménage pas les feignants au cours de ses réu event où le dernier à s’être interposé s’est retrouvé défenestré. Mais détrompez-vous, son enthousiasme débordant, qui n'est pas dû à une consommation d’alcool excessive (quoique, on devrait peut-être la faire souffler dans l' ballon de temps en temps), est une source de motivation infaillible pour les Hors-Lillois.
+                              </figcaption>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-lg-4 col-12 text-center" data-aos="fade-up" data-aos-duration="500">
+                      <img src="../img/trombi/paul.jpg" class="presentation p-5 rounded-circle img-fluid" alt="Respo Comm'ext" onclick="document.getElementById('paul_big').style.display='block'">
+                      <p class="plus" onclick="document.getElementById('paul_big').style.display='block'">En savoir plus</p>
+                      <figcaption class="h2 font-weight-bold">Respo Comm'ext</figcaption>
+                      <figcaption class="h5 font-italic">Pôle Barbotin</figcaption>
+                      <div id="paul_big" class="description" >
+                          <div class="container">
+                              <button type="button" class="close" aria-label="Close" onclick="document.getElementById('paul_big').style.display='none'">
+                                  <span aria-hidden="true" class="text-white">&times;</span>
+                              </button>
+                              <img src="../img/trombi/paul.jpg" class="p-2 p-md-5 img-fluid" alt="Comm'ext">
+                              <figcaption><h2>Paul</h2> Paul, il a pas le temps. C'est un pôle à lui tout seul, qu'il doit gérer en parallèle de ses multiples projets, et de sa chère Camille (coucou, t'es sûre que tu listes pas ? Ah bon, au temps pour moi...). <br>
+                              Jamais dernier pour un limousin en compagnie de ses partenaires de BDSM Hugues et Damien, ce Breton assume complétement de se déplacer en Mini, si bien qu'on le confond parfois avec une pétasse de Paris. Excusez-nous pour cette blague beauf, mais il faut dire que Paul sait les apprécier en bon Michel. 
+                              </figcaption>
+                          </div>
+                      </div>  
+                  </div>       
+                  <div class="col-lg-4 col-12 text-center" data-aos="fade-up" data-aos-duration="500">
+                      <img src="../img/trombi/jules.jpg" class="presentation p-5 rounded-circle img-fluid" alt="Vice Trez" onclick="document.getElementById('jules_big').style.display='block'">
+                      <p class="plus" onclick="document.getElementById('jules_big').style.display='block'">En savoir plus</p>
+                      <figcaption class="h2 font-weight-bold">Vice Trez</figcaption>
+                      <figcaption class="h5 font-italic">Top chef</figcaption>
+                      <div id="jules_big" class="description" >
+                          <div class="container">
+                              <button type="button" class="close" aria-label="Close" onclick="document.getElementById('jules_big').style.display='none'">
+                                  <span aria-hidden="true" class="text-white">&times;</span>
+                              </button>
+                              <img src="../img/trombi/jules.jpg" class="p-2 p-md-5 img-fluid" alt="Vice Trez">
+                              <figcaption><h2>Jules</h2> Jules, c'est pas la marque de ton pull, c'est la marque d'un grand homme. Grand par son talent culinaire, il a au bout de sa spatule tout ce que tu adules. Vous l'aurez compris il est top notre chef, il sait nous cuisiner à toutes les sauces. <br>
+                              Il est amateur du grand Espace (pas la renault), c'est pourquoi il est parisien. Il est cosmique et comique, ainsi dans l'hypothèse du théorème Ricardtard PastisTôt, c'est le S. 
+                              </figcaption>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-lg-4 col-12 text-center" data-aos="fade-up" data-aos-duration="500">
+                      <img src="../img/trombi/hugues.jpg" class="presentation p-5 rounded-circle img-fluid" alt="Respo Comm'int" onclick="document.getElementById('hugues_big').style.display='block'">
+                      <p class="plus" onclick="document.getElementById('hugues_big').style.display='block'">En savoir plus</p>
+                      <figcaption class="h2 font-weight-bold">Respo Comm'int</figcaption>
+                      <figcaption class="h5 font-italic">Vessinette</figcaption>
+                      <div id="hugues_big" class="description" >
+                          <div class="container">
+                              <button type="button" class="close" aria-label="Close" onclick="document.getElementById('hugues_big').style.display='none'">
+                                  <span aria-hidden="true" class="text-white">&times;</span>
+                              </button>
+                              <img src="../img/trombi/hugues.jpg" class="p-2 p-md-5 img-fluid" alt="Comm'int">
+                              <figcaption><h2>Hugues</h2> Sur tous les fronts, ce respo com de génie excelle même en cuisine avec sa fameuse recette de Patzotto ® . Élevé dans la froideur du Nord, il saura embraser l’ambiance à la moindre note de “La Chanson des Cigales". Tel Mike Horn, il a prouvé maintes fois sa valeur d’aventurier, en témoigne sa cicatrice au doigt qu’il a sacrifié pour ouvrir une conserve de salade niçoise et sauver tous ses camarades scouts. Ne vous faites pas de fausses idées, ce n’est pas sa peur des serpents qui le fait vessiner toutes les heures mais bien son intérêt trop prononcé pour la bonne bière du Nord.  
+                              </figcaption>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-lg-4 col-12 text-center" data-aos="fade-up" data-aos-duration="500">
+                      <img src="../img/trombi/baptiste.jpg" class="presentation p-5 rounded-circle img-fluid" alt="VPI" onclick="document.getElementById('baptiste_big').style.display='block'">
+                      <p class="plus" onclick="document.getElementById('baptiste_big').style.display='block'">En savoir plus</p>
+                      <figcaption class="h2 font-weight-bold">VPI</figcaption>
+                      <figcaption class="h5 font-italic">Exhibitionniste</figcaption>
+                      <div id="baptiste_big" class="description" >
+                          <div class="container">
+                              <button type="button" class="close" aria-label="Close" onclick="document.getElementById('baptiste_big').style.display='none'">
+                                  <span aria-hidden="true" class="text-white">&times;</span>
+                              </button>
+                              <img src="../img/trombi/baptiste.jpg" class="p-2 p-md-5 img-fluid" alt="VPI">
+                              <figcaption><h2>Baptiste</h2> On raconte que Baptiste peut allumer un brasier avec les étincelles de ses prunelles. Même s’il paraît que son coeur reste à prendre, on crush tous sur “ses yeux marrons qui pétillent” (cf. crush_centrale sur Insta, 15/10/20).  <br>
+                                  Souriant sous tous les temps, mais surtout sous le soleil du Mont Pellier, ce grimpeur exhibitionniste prétend détenir le record de vitesse dans les escaliers de la rez, l’histoire ne précise pas s’il l’a décroché avec son turbo skate ou sa slack.
+                              </figcaption>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-lg-4 col-12 text-center" data-aos="fade-up" data-aos-duration="500">
+                      <img src="../img/trombi/constance.jpg" class="presentation p-5 rounded-circle img-fluid" alt="Respo Event" onclick="document.getElementById('constance_big').style.display='block'">
+                      <p class="plus" onclick="document.getElementById('constance_big').style.display='block'">En savoir plus</p>
+                      <figcaption class="h2 font-weight-bold">Respo Event</figcaption>
+                      <figcaption class="h5 font-italic">Génerale</figcaption>
+                      <div id="constance_big" class="description" >
+                          <div class="container">
+                              <button type="button" class="close" aria-label="Close" onclick="document.getElementById('constance_big').style.display='none'">
+                                  <span aria-hidden="true" class="text-white">&times;</span>
+                              </button>
+                              <img src="../img/trombi/constance.jpg" class="p-2 p-md-5 img-fluid" alt="Event">
+                              <figcaption><h2>Constance</h2> Hé flûte ! On a pas de description pour Constance, heureusement elle peut en jouer, bon ok la chute est mauvaise c'est clarinette....euh clair et net. Faut pas lui crêper le chignon pour qu'elle vous fasse des crêpes dignes des plus grands, un talent longtemps gardé secret défense. Enfin bon, les dossiers classés confidentiels, la Générale elle connaît. Grâce à ses techniques qui lui restent du GIGN, les coups de mou tardent pas à partir et on dit pas ça parce qu'elle est dijonnaise.
+                                  Elle paraît pas sympa, mais en réalité sa genérosité est à l'épreuve des balles surtout pour prêter son vélo, seul bémol ça ne roule pas trop avec RéMi, le comble pour une musicienne. Ce n'est pas pour ses talents d'actrice qu'elle est palmée mais bien pour descendre les escaliers.
+                              </figcaption>
+                          </div>
+                      </div>  
+                  </div>       
+                  <div class="col-lg-4 col-12 text-center" data-aos="fade-up" data-aos-duration="500">
+                      <img src="../img/trombi/pierre.jpg" class="presentation p-5 rounded-circle img-fluid" alt="Respo Etudes" onclick="document.getElementById('pierre_big').style.display='block'">
+                      <p class="plus" onclick="document.getElementById('pierre_big').style.display='block'">En savoir plus</p>
+                      <figcaption class="h2 font-weight-bold">Respo Etudes</figcaption>
+                      <figcaption class="h5 font-italic">Le Bûcheron</figcaption>
+                      <div id="pierre_big" class="description" >
+                          <div class="container">
+                              <button type="button" class="close" aria-label="Close" onclick="document.getElementById('pierre_big').style.display='none'">
+                                  <span aria-hidden="true" class="text-white">&times;</span>
+                              </button>
+                              <img src="../img/trombi/pierre.jpg" class="p-2 p-md-5 img-fluid" alt="Etudes">
+                              <figcaption><h2>Pierre</h2> Pierre c'est le gars solide comme un roc sur qui on peut compter. Amateur de hache (et pas d'EH attention, il préfère les lacets aux scratchs), il parcourt les forêts de la Sarthe à la recherche de gibier et d'arbres à couper, mais bon comme c'est pas assez physique pour lui il fait ça au pas de course, et on peut vous dire qu'il envoie du bois. Ainsi, ses bûches réchauffent les coeurs de sa famille adorée et aussi la viande de ses bécasses à dorer ! Et puis à la fin de sa journée puisqu'il est toujours pas fatigué, il fait une petite partie de tennis avant d'avaler des billes, qui serait une discipline reconnue désormais, il nous a assuré qu'il a été champion de sa bourgade en 2007.
+                              </figcaption>
+                          </div>
+                      </div> 
+                  </div>
+
+                  <div class="col-lg-4 col-12 text-center" data-aos="fade-up" data-aos-duration="500">
+                      <img src="../img/trombi/alex.jpg" class="presentation p-5 rounded-circle img-fluid" alt="VPE" onclick="document.getElementById('alex_big').style.display='block'">
+                      <p class="plus" onclick="document.getElementById('alex_big').style.display='block'">En savoir plus</p>
+                      <figcaption class="h2 font-weight-bold">VPE</figcaption>
+                      <figcaption class="h5 font-italic">Super Posey</figcaption>
+                      <div id="alex_big" class="description" >
+                          <div class="container">
+                              <button type="button" class="close" aria-label="Close" onclick="document.getElementById('alex_big').style.display='none'">
+                                  <span aria-hidden="true" class="text-white">&times;</span>
+                              </button>
+                              <img src="../img/trombi/alex.jpg" class="p-2 p-md-5 img-fluid" alt="VPE">
+                              <figcaption><h2>Alex</h2> Alex est une démarcheuse de génie. Tout terrain, elle ne marche pas sur la tête quand elle vous dégote un frigo américain pour moins de 40€. Aventurière, elle explore tous les coins mais surtout Le BonCoin. C’est là qu’elle a gagné le gros lot avec son nouveau vélo. <br>
+                                  Fatigué ou tristounet ? Li Super Posey est là pour vous ambiancey ! Aux fourneaux, elle chante comme une casserole et chauffe le dance floor, à moins qu'elle chauffe la casserole et chante sur le dancefloor. Prête à danser à chaque instant, elle pourra entre deux pas de danse vous préparer des nouilles chinoises recommandées par le guide du routard 2026 (oui oui elle vient du turfu).
+                              </figcaption>
+                          </div>
+                      </div> 
+                  </div>
+                  <div class="col-lg-4 col-12 text-center" data-aos="fade-up" data-aos-duration="500">
+                      <img src="../img/trombi/anna.jpg" class="presentation p-5 rounded-circle img-fluid" alt="Respo Partenaires" onclick="document.getElementById('anna_big').style.display='block'">
+                      <p class="plus" onclick="document.getElementById('anna_big').style.display='block'">En savoir plus</p>
+                      <figcaption class="h2 font-weight-bold">Respo Partenaires</figcaption>
+                      <figcaption class="h5 font-italic">Winnie</figcaption>
+                      <div id="anna_big" class="description" >
+                          <div class="container">
+                              <button type="button" class="close" aria-label="Close" onclick="document.getElementById('anna_big').style.display='none'">
+                                  <span aria-hidden="true" class="text-white">&times;</span>
+                              </button>
+                              <img src="../img/trombi/anna.jpg" class="p-2 p-md-5 img-fluid" alt="Partenaires">
+                              <figcaption><h2>Anna</h2>  Anna, c’est pas une nana comme les autres, elle a une voix mielleuse mais avec ses origines polonaises, c'est un ours féroce qui se cache dans son âme. Fière de sa capacité d'analyse, elle n'hésite pas à guider le troupeau vers les pâturages de la joie. Elle ne dessine pas un mouton mais nous régale avec son coup de crayon. On ne vous a pas dit, alors juste en quatre mots, elle aime le piano.
+                              </figcaption>
+                          </div>
+                      </div> 
+                  </div>
+                  <div class="col-lg-4 col-12 text-center" data-aos="fade-up" data-aos-duration="500">
+                      <img src="../img/trombi/david.jpg" class="presentation p-5 rounded-circle img-fluid" alt="Respo Media" onclick="document.getElementById('david_big').style.display='block'">
+                      <p class="plus" onclick="document.getElementById('david_big').style.display='block'">En savoir plus</p>
+                      <figcaption class="h2 font-weight-bold">Respo Media</figcaption>
+                      <figcaption class="h5 font-italic">DSK</figcaption>
+                      <div id="david_big" class="description" >
+                          <div class="container">
+                              <button type="button" class="close" aria-label="Close" onclick="document.getElementById('david_big').style.display='none'">
+                                  <span aria-hidden="true" class="text-white">&times;</span>
+                              </button>
+                              <img src="../img/trombi/david.jpg" class="p-2 p-md-5 img-fluid" alt="Media">
+                              <figcaption><h2>David</h2>  Président du pôle Barbotin, le peignoir de David égaye nos matinées, nos soirées et parfois nos après-midi, si la soirée était arrosée. Mais c’est où rosée ? <br>
+                              En bon joueur d’éTchèque (même s’il est Bulgare) si on le presse, il ralentit. De temps en temps, il lui arrive de s’énerver sur un petit jeu multijoueur peu connu : LoL. Cela n'entache pas ses capacités de communication, appuyées par un anglais aux petits oignons. Et les petits oignons, c’est bon. 
+                              Son profil grec rend hommage aux philosophes des écrits dans lesquels il se plonge, d’ailleurs c’est le seul à plonger en peignoir.
+                              </figcaption>
+                          </div>
+                      </div>  
+                  </div>       
+                  <div class="col-lg-4 col-12 text-center" data-aos="fade-up" data-aos-duration="500">
+                      <img src="../img/trombi/pablo.jpg" class="presentation p-5 rounded-circle img-fluid" alt="Respo Internationaux" onclick="document.getElementById('pablo_big').style.display='block'">
+                      <p class="plus" onclick="document.getElementById('pablo_big').style.display='block'">En savoir plus</p>
+                      <figcaption class="h2 font-weight-bold">Respo Internationaux</figcaption>
+                      <figcaption class="h5 font-italic">Con Valley</figcaption>
+                      <div id="pablo_big" class="description" >
+                          <div class="container">
+                              <button type="button" class="close" aria-label="Close" onclick="document.getElementById('pablo_big').style.display='none'">
+                                  <span aria-hidden="true" class="text-white">&times;</span>
+                              </button>
+                              <img src="../img/trombi/pablo.jpg" class="p-2 p-md-5 img-fluid" alt="Internationaux">
+                              <figcaption><h2>Pablo</h2>  Pablo a grandi au Chili mais il n'est pas toujours chill, il préfère dire qu'il est tranquille. C'est un gamer avant tout, mais un gamer différent...ce qu'il apprécie c'est les yeux vidéos. C'est pourquoi, voyez-vous, on tient à lui  comme à la prunelle de nos yeux. En effet, sa passion pour la fête a commencé lors de soirées reggaeton et aujourd'hui il s'aventure avec les Hors-Lillois pour conquérir tout Centrale avec sa musique.  <br>
+                                  Il jongle entre la manette et les cours à la perfection mais ce qu'on ne vous dira pas c'est s'il sait jongler avec des couteaux.
+                              </figcaption>
+                          </div>
+                      </div> 
+                  </div>
+            
+                  <div class="col-lg-4 col-12 text-center" data-aos="fade-up" data-aos-duration="500">
+                      <img src="../img/trombi/damien.jpg" class="presentation p-5 rounded-circle img-fluid" alt="Respo Log" onclick="document.getElementById('damien_big').style.display='block'">
+                      <p class="plus" onclick="document.getElementById('damien_big').style.display='block'">En savoir plus</p>
+                      <figcaption class="h2 font-weight-bold">Respo Log</figcaption>
+                      <figcaption class="h5 font-italic">Le maitre étalon</figcaption>
+                      <div id="damien_big" class="description" >
+                          <div class="container">
+                              <button type="button" class="close" aria-label="Close" onclick="document.getElementById('damien_big').style.display='none'">
+                                  <span aria-hidden="true" class="text-white">&times;</span>
+                              </button>
+                              <img src="../img/trombi/damien.jpg" class="p-2 p-md-5 img-fluid" alt="Logistique">
+                              <figcaption><h2>Damien</h2>  Damien est un véritable ours mal léché, réveillez-le avant 8h et il vous le fera regretter. Amateur de blagues comme on les aime chez les Michels, de simulateurs de camion et de formule 1, Damien a appris à parler à Toulouse, où l'on remplace les "c'est pas vrai ?" par "culé !" et il lui arrive d'avoir des envies de pastis vers 4 ou 5 h du matin. <br>
+                                  Il fait partie de la prestigieuse association de vélo : Cent'Roule (centrale pédale pour les connaisseurs). Avec sa partenaire la Lapine, il est un spécialiste des plats à gratin qu'il manie comme personne chez les Hors'Lillois.
+                              </figcaption>
+                          </div>
+                      </div> 
+                  </div>
+                  <div class="col-lg-4 col-12 text-center" data-aos="fade-up" data-aos-duration="500">
+                      <img src="../img/trombi/grégoire.jpg" class="presentation p-5 rounded-circle img-fluid" alt="Respo Web" onclick="document.getElementById('gregoire_big').style.display='block'">
+                      <p class="plus" onclick="document.getElementById('gregoire_big').style.display='block'">En savoir plus</p>
+                      <figcaption class="h2 font-weight-bold">Respo Web</figcaption>
+                      <figcaption class="h5 font-italic">Gazal</figcaption>
+                      <div id="gregoire_big" class="description" >
+                          <div class="container">
+                              <button type="button" class="close" aria-label="Close" onclick="document.getElementById('gregoire_big').style.display='none'">
+                                  <span aria-hidden="true" class="text-white">&times;</span>
+                              </button>
+                              <img src="../img/trombi/grégoire.jpg" class="p-2 p-md-5 img-fluid" alt="Web">
+                              <figcaption><h2>Grégoire</h2>  Véritable McGyver de l'informatique, enlevez Grégoire aux Hors'Lillois et ils ne sauront plus distinguer la gauche de la droite. Il se dit "amateur" de photographie, mais à nos yeux c'est un artiste perfectionniste qui n'hésitera pas à passer la nuit à retoucher la photo (de profil) de Noé pour que ses cheveux aient l'air le plus soyeux possible. <br>
+                                  Sous son air sérieux se cache un petit plaisantin à l'humour fin qui saura vous surprendre par ses interventions incongrues qui de rire nous tuent. 
+                              </figcaption>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-lg-4 col-12 text-center" data-aos="fade-up" data-aos-duration="500">
+                      <img src="../img/trombi/guillaume.jpg" class="presentation p-5 rounded-circle img-fluid" alt="Ambassadeur Alumni" onclick="document.getElementById('guillaume_big').style.display='block'">
+                      <p class="plus" onclick="document.getElementById('guillaume_big').style.display='block'">En savoir plus</p>
+                      <figcaption class="h2 font-weight-bold">Ambassadeur Alumni</figcaption>
+                      <figcaption class="h5 font-italic">Dinguerie</figcaption>
+                      <div id="guillaume_big" class="description" >
+                          <div class="container">
+                              <button type="button" class="close" aria-label="Close" onclick="document.getElementById('guillaume_big').style.display='none'">
+                                  <span aria-hidden="true" class="text-white">&times;</span>
+                              </button>
+                              <img src="../img/trombi/guillaume.jpg" class="p-2 p-md-5 img-fluid" alt="Ambassadeur Alumni">
+                              <figcaption><h2>Guillaume</h2>  Guillaume vient de PT, et il aime le faire savoir. Il assume ses origines, et trouve que à peu près tout est une "dinguerie". Il trouve que les Hors-Lillois sont trop "DAR". Ah oui, il emploie un jargon trop obscur pour être compris par des citadins, d'ailleurs, si vous êtes Parisien, ne lui dites pas. Pour lui, le Mont-Saint-Michel, c'est en Normandie, et il déteste les Bretons. <br>
+                                  Amateur de bières en tout genre (même si kro>> leffe), il a développé une addiction au pastis (lui aussi). Mais ce qu'il préfère, c'est la teasanne, dont il est le seul à détenir la recette. Guillaume sait aussi être classe : il est toujours bien habillé pour aller à Centrale (du coup il s'est bien habillé environ 3 fois)." 
+                              </figcaption>
+                          </div>
+                      </div> 
+                  </div>       
+                  <div class="col-lg-4 col-12 text-center" data-aos="fade-up" data-aos-duration="500">
+                      <img src="../img/trombi/simon.jpg" class="presentation p-5 rounded-circle img-fluid" alt="Respo Internationaux" onclick="document.getElementById('simon_big').style.display='block'">
+                      <p class="plus" onclick="document.getElementById('simon_big').style.display='block'">En savoir plus</p>
+                      <figcaption class="h2 font-weight-bold">Respo Internationaux</figcaption>
+                      <figcaption class="h5 font-italic">Corny</figcaption>
+                      <div id="simon_big" class="description" >
+                          <div class="container">
+                              <button type="button" class="close" aria-label="Close" onclick="document.getElementById('simon_big').style.display='none'">
+                                  <span aria-hidden="true" class="text-white">&times;</span>
+                              </button>
+                              <img src="../img/trombi/simon.jpg" class="p-2 p-md-5 img-fluid" alt="Internationaux">
+                              <figcaption><h2>Simon</h2>  Si mon ami Simon a mis six monts entre Lille et Münster, c’est parce qu’avec deux bouteilles de Trois Monts, il est prêt à engloutir les kilomètres avec sa Volkswagen afin de se rendre au week-end de liste (boire ou choisir il faut conduire). Et pourtant, il n’apprécie guère les routes françaises ! <br>
+                              Il s’y connaît en mécanique, c’est pourquoi il adore en rouler surtout au guidon de son turbo-vélo. Démarcheur de talent, il casse la démarche comme Samuel Umtiti. <br>
+                              Simon aime la bière, la mer et les carnavals. Quoi ? On dit des carnavaux ? En tout cas, il aime la fête et saura égayer les soirées des centraliens et des centraliennes. <br>
+                              </figcaption>
+                          </div>
+                      </div> 
+                  </div>
+            
+                  <div class="col-lg-4 col-12 text-center" data-aos="fade-up" data-aos-duration="500">
+                      <img src="../img/trombi/théo.jpg" class="presentation p-5 rounded-circle img-fluid" alt="Respo Com/Media" onclick="document.getElementById('theo_big').style.display='block'">
+                      <p class="plus" onclick="document.getElementById('theo_big').style.display='block'">En savoir plus</p>
+                      <figcaption class="h2 font-weight-bold">Respo Com/Media</figcaption>
+                      <figcaption class="h5 font-italic">In'Lillois</figcaption>
+                      <div id="theo_big" class="description" >
+                          <div class="container">
+                              <button type="button" class="close" aria-label="Close" onclick="document.getElementById('theo_big').style.display='none'">
+                                  <span aria-hidden="true" class="text-white">&times;</span>
+                              </button>
+                              <img src="../img/trombi/théo.jpg" class="p-2 p-md-5 img-fluid" alt="Com/Mdia">
+                              <figcaption><h2>Théo</h2>  Pour Théo, audace, exigence et respect, c'est pas du vent. Audacieux dans ses salutations qu'il n'effectue qu'avec des paroles de "Bande organisée", Exigeant quand il s'agit de ses ient-cli CLP, il sait aussi être Respectueux du traffic aérien quand il pilote son drône pour tourner des plans aériens de bâtard.  <br>
+                                  Le In'Lillois vient de Lille, et ses venues à la Rez sont synonymes de soirées sans fin, surtout lorsqu'il arrive avec sa hotte de père Noël pleine de goodies made in Hors'Lillois. 
+                              </figcaption>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-lg-4 col-12 text-center" data-aos="fade-up" data-aos-duration="500">
+                      <img src="../img/trombi/thomas.jpg" class="presentation p-5 rounded-circle img-fluid" alt="Respo Rez" onclick="document.getElementById('thomas_big').style.display='block'">
+                      <p class="plus" onclick="document.getElementById('thomas_big').style.display='block'">En savoir plus</p>
+                      <figcaption class="h2 font-weight-bold">Respo Rez</figcaption>
+                      <figcaption class="h5 font-italic">Jannos</figcaption>
+                      <div id="thomas_big" class="description" >
+                          <div class="container">
+                              <button type="button" class="close" aria-label="Close" onclick="document.getElementById('thomas_big').style.display='none'">
+                                  <span aria-hidden="true" class="text-white">&times;</span>
+                              </button>
+                              <img src="../img/trombi/thomas.jpg" class="p-2 p-md-5 img-fluid" alt="Rez">
+                              <figcaption><h2>Thomas</h2>  Thomas est avant tout un homme passionné, un féru de roulement. Et oui, il met du vieux pain sur son balcon pour attirer les bielles, les pignons ! Vous l'aurez compris, on a encore affaire à un PT mais il est l'un des rares à être assez délicat pour maîtriser la flûte traversière. On attend toujours un duo avec Constance d'ailleurs mais les CIRconstances les empêchent de tourner. (Petit point mécanique pour ceux qui n'auraient pas compris : le CIR est le centre instantané de rotation, du coup la phrase avant est hilarante, là tu rigoles, stp on s'est donné du mal). <br>
+                              Thomas est un manuel, il pratique le Handball et quand courir l'asphyxie, il finit sur LoL avec David là où il peut exprimer toute sa dextérité. 
+                              </figcaption>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-lg-4 col-12 text-center" data-aos="fade-up" data-aos-duration="500">
+                      <img src="../img/trombi/erwan.jpg" class="presentation p-5 rounded-circle img-fluid" alt="Respo DD/Etudes" onclick="document.getElementById('erwan_big').style.display='block'">
+                      <p class="plus" onclick="document.getElementById('erwan_big').style.display='block'">En savoir plus</p>
+                      <figcaption class="h2 font-weight-bold">Respo DD/Etudes</figcaption>
+                      <figcaption class="h5 font-italic">Phare Breton</figcaption>
+                      <div id="erwan_big" class="description" >
+                          <div class="container">
+                              <button type="button" class="close" aria-label="Close" onclick="document.getElementById('erwan_big').style.display='none'">
+                                  <span aria-hidden="true" class="text-white">&times;</span>
+                              </button>
+                              <img src="../img/trombi/erwan.jpg" class="p-2 p-md-5 img-fluid" alt="DD/Etudes">
+                              <figcaption><h2>Erwan</h2>  Erwan, c'est notre élément phare. Il n'est ni à Paupière ni à On ni à Xénon, mais à Mineux. En cuisinant des plats fins, il se fait plein de Cop1, et il a beau être à la Cop2 il ne composte pas, c’est pas sérieux ! Mais il paraît qu’il veut se mettre au tri...athlon, toute une organisation, et  l'organisation, il connaît ! Collectionneur de projets, il mène à bien ses idées en variant les sujets. Ils ont tous autant d’importance pour lui, même si c’est bien Centroule qu’il chérit. Eh oui cet homme se fait même des fiches de lecture, on le soupçonne de ne plus dormir... 
+                              </figcaption>
+                          </div>
+                      </div>  
+                  </div>       
+                  <div class="col-lg-4 col-12 text-center" data-aos="fade-up" data-aos-duration="500">
+                      <img src="../img/trombi/rémip.jpg" class="presentation p-5 rounded-circle img-fluid" alt="Respo Voyage/WEI" onclick="document.getElementById('remip_big').style.display='block'">
+                      <p class="plus" onclick="document.getElementById('remip_big').style.display='block'">En savoir plus</p>
+                      <figcaption class="h2 font-weight-bold">Respo Voyage/WEI</figcaption>
+                      <figcaption class="h5 font-italic">FaSol</figcaption>
+                      <div id="remip_big" class="description">
+                          <div class="container">
+                              <button type="button" class="close" aria-label="Close" onclick="document.getElementById('remip_big').style.display='none'">
+                                  <span aria-hidden="true" class="text-white">&times;</span>
+                              </button>
+                              <img src="../img/trombi/rémip.jpg" class="p-2 p-md-5 img-fluid" alt="Voyage/WEI">
+                              <figcaption><h2> Rémi P.</h2><br>  Rémi est un musicien, ce qui ne dénote pas avec son prénom ! Fan de Rémi (Bachelet, allez admirer la magnifique affiche qu'il conserve précieusement dans sa chambre) il gère ses projets aussi bien que ses touches: les stand up meetings c'est aussi derrière son piano, et oui il joue du piano debout c'est peut être un détail pour vous... <br>
+                                  En quête de sensations, ce féru de sport manie sa raquette avec une malice toute particulière lorsqu'il s'agit de faire courir Hugues. Enfin, l'astronomie n'a pas de secret pour lui : fort de son expérience, ce fin pêcheur est capable de vous dessiner la constellation du poisson les yeux fermés ! 
+                              </figcaption>
+                          </div>
+                      </div> 
+                  </div>
+                  <div class="col-lg-4 col-12 text-center" data-aos="fade-up" data-aos-duration="500">
+                      <img src="../img/trombi/cecilia.jpg" class="presentation p-5 rounded-circle img-fluid" alt="Respo Event" onclick="document.getElementById('cecilia_big').style.display='block'">
+                      <p class="plus" onclick="document.getElementById('cecilia_big').style.display='block'">En savoir plus</p>
+                      <figcaption class="h2 font-weight-bold">Respo Event</figcaption>
+                      <figcaption class="h5 font-italic">WonderWoman</figcaption>
+                      <div id="cecilia_big" class="description">  
+                          <div class="container">
+                              <button type="button" class="close" aria-label="Close" onclick="document.getElementById('cecilia_big').style.display='none'">
+                                  <span aria-hidden="true" class="text-white">&times;</span>
+                              </button>
+                              <img src="../img/trombi/cecilia.jpg" class="p-2 p-md-5 img-fluid" alt="Event">
+                              <figcaption><h2>Cecilia</h2>Cecilia vient de Fortaleza, c'est pourquoi elle est forte à l’aise à l’attache de cheveux sans chouchous. C’est pas pour autant qu’elle n’a pas de chouchous, Tom Jobim a la chance d’être dans sa douche tous les jours (auditivement hein) ! Eh oui, la musique elle aime bien, mais elle apprécie encore plus les vidéos déjantées, heyyayaya ! Et puis quand cela s'y prête, elle nous sort ses plus beaux pas de danse sur des rythmes brésiliens. En effet, il faut bien un peu se dépenser après avoir dégusté les succulents brigadeiros de Cecilia faits avec amour et passion ! 
+                              </figcaption>
+                          </div>
+                      </div> 
+                  </div>
+              </div>    
+          </div>
+          <div class="tab-pane fade" id="Programme"  role="tabpanel" aria-labelledby="Programme-tab">
+              <h1 class="text-center my-5">Programme des Hors’Lillois</h1>
+              <p>Bonjour centralien, bonjour centralienne ! <br>
+                  Avant de présenter nos mesures, voici les 4 axes qui les motivent, et dans lesquels toutes nos mesures s’inscrivent : 
+              </p>
+              <ul>
+                  <li><a href="#asso">Stimuler la vie associative</a> </li> 
+                  <li><a href="#com">Faciliter la communication entre les étudiant.e.s et l’école</a> </li> 
+                  <li><a href="#rez">Améliorer la vie à la rez</a> </li>
+                  <li><a href="#event">Renouer avec l’évènementiel</a></li>
+              </ul>
+              <br>
+              <p> Dans chacun de ces 4 axes, nous porterons une attention particulière à l’écologie, au féminisme, à la sécurité sanitaire, à la représentation de la communauté LGBTQ+.</p>
+              <hr class="featurette-divider my-4 bg-white"/>
+              <div data-aos="fade-up" data-aos-duration="500">
+
+                  <h2 class="text-center font-weight-bold py-3" id="asso">Stimuler la vie associative</h2>
+                
+                  <p>C’est un enjeu majeur de notre programme. Malgré la persistance de la crise sanitaire, nous voulons relever le challenge de relancer cette vie associative essentielle à nos années étudiantes. <br></p>
+
+                  <h3>Aprèm des assos en Avril</h3> 
+                
+                  <p>Pour relancer l’activité associative, nous sommes convaincus que le présentiel est essentiel. C’est pourquoi nous voulons organiser une aprèm des assos à la rez, en respectant toutes les mesures de distanciation nécessaires. Elle permettra aux G1 qui n’ont pas eu l’occasion de rejoindre une association en début d’année, d’enfin participer à l’aventure associative. Pour cet événement, nous comptons bien sûr sur les G2 qui pourront témoigner de leur expérience, mais aussi sur les G1 déjà impliqués, qui sauront motiver d’autres G1 à rejoindre une association. Madame Herchuelz est d’ailleurs prête à préparer cette aprèm avec nous. </p>
+                
+                  <h3>Concours des mascottes</h3>
+                    
+                  <p> Quoi de plus corporate que de s'identifier à la mascotte de son asso préféré ? Afin de mettre en lumière l’investissement de chacun.e, nous voulons organiser un concours des mascottes associatives (Pain gouin, José Bourré, Dédé le dé, Claf la girafe…). Chaque asso participante devra produire une courte vidéo (2-5 minutes) au smartphone présentant la mascotte de l’asso. Le concours sera aussi ouvert aux assos sans mascotte et se terminera par une cérémonie des Césars. Nous organiserons un évènement aux couleurs de l’asso gagnante (dans l’idéal une soirée dansante, mais bien sûr nous nous adapterons au contexte sanitaire).</p>
+              </div>
+
+              <hr class="featurette-divider my-4 bg-white"/>
+
+              <div data-aos="fade-up">
+                  <h2 class="text-center font-weight-bold py-3" id="com">Faciliter la communication entre les étudiants et Centrale</h2>
+                
+                  <h3>Enquête de satisfaction pour rassembler des points d’améliorations à Centrale</h3> 
+                  <p>L’arrivée de Gilles Fleury à Centrale nous semble être une opportunité pour améliorer la communication entre Centrale et les étudiants, que beaucoup parmi les deux côtés déplorent. Par exemple, le site internet de l’école fait l’objet de beaucoup de critiques. C’est pourquoi nous avons pensé à mener une enquête de satisfaction, à l'échelle de la promo, qui se ferait en ligne, via les réseaux sociaux. Suite à cette enquête, nous nous chargerons de rédiger une synthèse répertoriant des problèmes et proposant des solutions, destinée à l’administration.</p>
+                    
+                  <h3>Foire aux questions pour vous guider </h3>
+                  <p>G0 sans expérience au début de l’année, vous avez sûrement été désarçonnés par la multitude d’applications scolaires à savoir manier. Comment se servir de WebAurion (saviez vous que vous pouvez y trouver la liste de tous les centraliens avec leurs adresses mail, qui ont fait un DD ou un stage dans telle ou telle université?), de Moodle ou encore de l’ENT? Une FAQ sera mise en place pour répondre aux questions les plus fréquentes et utiles afin de faciliter la vie des futurs G1, en complément du “guide de survie” de début d’année.</p>
+                    
+                  <h3>Compléter le guide des Études</h3>
+                  <p>Le guide des études actuel se concentre sur la G1. Nous souhaitons y ajouter des explications sur la G2 et la G3, notamment des précisions sur les différents cursus possibles, mais surtout tenir à jour une liste de contacts d’étudiants volontaires effectuant chaque cursus.</p>
+
+                  <h3>Aide pour le choix des électifs </h3>
+                  <p>Pour le choix des électifs, on aimerait créer des salons discord (un par groupe d’électif), où les étudiants pourraient poser toutes leurs questions. Nous nous chargerons de recruter et répartir dans les différents salons des G2 volontaires pour partager leur expérience. On envisage aussi la rédaction d’un guide des électifs, écrit par les élèves. Cette mesure vient en complément des salons discord, et elle découle du fait que le syllabus proposé par centrale ne décrit pas assez, selon nous, le côté pratique des cours.</p>
+              </div>
+
+              <hr class="featurette-divider my-4 bg-white"/>
+
+              <div data-aos="fade-up">
+                    
+                  <h2 class="text-center font-weight-bold py-3" id="rez">Améliorer la vie à la rez</h2>
+                
+                  <p>
+                      Notre année particulière a connu le confinement et le distanciel, et connaît donc bien la résidence. Comme nous y passons beaucoup de temps, quelques aménagements ont été imaginés pour y améliorer le cadre de vie. </p>
+                  <h3>Détecteurs de lumière dans les couloirs </h3> 
+                  <p>Dans la plupart des couloirs de la rez, les lumières sont allumées en permanence. Remplacer les plafonniers actuels par des plafonniers avec détecteurs de présence permettrait d’éviter les dépenses d’énergie inutiles. Après une première estimation, il est apparu que le prix de nouveaux plafonniers serait amorti en moins de deux ans. En termes d'énergie, cela permettrait d’économiser une dizaine d’heure d’éclairage par lampe et par jour. Ce qui correspond sur un an, à l’émission de 6,4 kg de CO2 équivalent par lampe. Cela fait, pour environ 200 lampes à la résidence, 1,2 tonne de CO2 émis en moins sur une année (un vol aller retour Paris-New-York).</p>
+                  <h3>Blabla Institut</h3>
+                  <p>Le groupe “Centrale Lille covoiturage : Lille-Paris” n’est plus du tout actif depuis le 26 octobre 2020, alors que nous avons toujours besoin de nous déplacer. Certains covoiturages s’organisent grâce à des posts sur Centrash mais ils sont minoritaires. A travers cette mesure, nous comptons relancer le groupe, promouvoir le covoiturage et organiser les départs en vacances via un sheet. Nous voulons aussi y ajouter l’ITEEM et l’ENSCL.</p>
+                  <h3>Tables de pique-nique </h3>
+                  <p>Avec le retour du soleil, on a remarqué que beaucoup d’habitants de la rez mangeaient dehors, soit en sortant des tables pliables, soit par terre directement. C’est pourquoi nous pensons que rajouter des tables de pique-nique dans la rez serait profitable à tout le monde. Nous avons pensé à plusieurs emplacements, par exemple, sous les arbres qui sont entre le DF et le local BDS. Après avoir parlé de cette mesure à l'administration, il s’avère qu’elle est tout à fait réalisable, dans la mesure où ils viennent d’en commander pour l’ITEEM et pour le B7.         </p>      
+              </div>
+              <hr class="featurette-divider my-4 bg-white"/>
+              <div data-aos="fade-up">
+
+                  <h2 class="text-center font-weight-bold py-3" id="event">Renouer avec l’événementiel</h2>
+                
+                  <p>Le jour où les rassemblements seront permis n’est pas encore arrivé, et même si nous ferons en sorte d’être prêt à ce moment-là, soyons résilients et créatifs pour imaginer des événements et continuer à nous amuser différemment.
+
+                  <h3>Echange intercentrale </h3> 
+                  <p>Pour cette mesure, le but est clairement la rencontre, la découverte, et le partage. Le principe est simple : un échange d’environ 100 personnes entre deux centrales (Lille et Lyon par exemple). On formera des binômes entre les centrales avec un questionnaire et un algorithme de matching et ces binômes seront chargés de s’accueillir l’un l’autre pendant les échanges. Au programme : visite de la ville, soirée, jeux sur la rez. Le transport se ferait en car. Bonne humeur, rencontres,et convivialité : tout pour passer deux bons week-end ! </p>
+                  <h3>Méchoui Alumni</h3>
+                  <p>Organiser un évènement avec les diplômés, dans une atmosphère décontractée, dans l’idéal un grand méchoui convivial, là encore, nous nous adapterons à la situation sanitaire.</p>
+                  <h3>Réunir l'ensemble des étudiants de l’institut</h3>
+                  <p>Nous travaillons juste à côté des chimistes de l’ENSCL, et des iteemiens de l’ITEEM, mais nous ne les connaissons que peu… C’est dommage et nous aimerions que ça change. Alors pour élargir nos horizons et notre réseau, on aimerait organiser des évènements communs avec l’ITEEM et l’ENSCL. Par exemple des aprem à la rez. </p>
+                  <h3>Le retour du C5</h3>
+                  <p>Le C5 est un grand événement se déroulant à CS, réunissant les représentants des grandes associations centraliennes et des BDX le temps d’un week-end pour une série de conférences et d'échanges d’idées, de méthodes, et de bonnes pratiques. L’idée ici est de relancer l’asso C5 qui se trouve à Lyon et qui a des ramifications dans toutes les centrales. Tous les présidents des BDE des autres Centrale sont motivés à faire renaître le C5 !</p>
+
+              </div>
+              <hr class="featurette-divider my-4 bg-white"/>
+              <div data-aos="fade-up">
+                  <h2 class="text-center font-weight-bold py-3" id="inte">Inté</h2>
+                
+                  <h3>Covid et intégration</h3> 
+                  <p>Une inté, c’est important, cette année ne nous l’a que trop rappelée. Pour ne pas être pris de cours, soyons prévoyants. Nous allons concevoir trois ébauches de propositions de parcours d’intégration/WEI différents, pour pouvoir s’adapter au mieux aux conditions sanitaires de septembre prochain. Le but est d’entamer le dialogue avec l’administration très tôt, pour être prêt quelle que soit la situation sanitaire de la rentrée.</p>
+                  <h3>Evolution du système de parrainage</h3>
+                  <p>Au questionnaire de matching de début d’année, nous rajouterons des “familles”, c'est-à-dire des groupements de 3 G2 et de 3 G1 (ou plus). Cela permettra de proposer plusieurs repères aux G0 dès le début de l’année, de rencontrer rapidement un premier groupe de G2 et de G0, et de permettre des activités en présentiel car en petits groupes. Les familles seraient formées par affinités par les G2.
+                  </p>  
+              </div>  
+          </div>
+
+
+
+
+
+          <div class="tab-pane fade" id="film-liste" role="tabpanel" aria-labelledby="film-liste-tab"> 
+              <p>Un grand savant de Marseille a dit un jour moins de blabla et plus d'action 🎥</p>
+              <iframe width="100%" height="720" src="https://www.youtube.com/embed/kD1bzHRuu4g" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>        
+          </div>
+      </div>
+
+  </div>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+  <script>
+      AOS.init();
+  </script>
+
+  </section>
+
+<!-- FOOTER -->	
+
+<footer class="container mastfoot footPage mx-auto mt-5 py-3">
+    <p class="d-none d-md-inline  float-right overflow-auto "><a href="#top">Back to top</a></p>
+    <p>&copy; 2020-2021 Brocolille &middot; <a href="#">Privacy</a> &middot; <a href="/contact">Contact</a></p>
+</footer>
+
+
+	<!-- Optional JavaScript -->
+  <script src="./script.js"></script>
+ 
+  <script src="https://anijs.github.io/lib/anijs/anijs-min.js"></script> 
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</body>
+
+</html>
