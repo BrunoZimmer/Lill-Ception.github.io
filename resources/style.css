@@ -521,7 +521,7 @@
    }
  }
  .active{
-   background-color: white;
+   color: white;
  }
 
  .teste.active a{
@@ -561,7 +561,7 @@
 
 .TextTitleVideo{
   position:relative;
-  top: 0px;
+  top: 30px;
   margin-bottom: 50px;
   left: 100px;
   font-size: 50px;
@@ -594,4 +594,7 @@
   position:relative;
   top: 100px;
 
+}
+.ContainerSponsors .container{
+  margin-bottom: 100px;
 }
