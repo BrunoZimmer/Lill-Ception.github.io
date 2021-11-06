@@ -2,11 +2,11 @@
 $(window).on("scroll", function() {
     var pageScroll = $(window).scrollTop();
 
-    if(pageScroll < 250) {
+    if(pageScroll < 150) {
         $(".DivNavHeaderTrombinoscope").removeClass("active");
 
         $(".DivNavHeaderAccueil").addClass("active");
-    } else if (pageScroll > 250 && pageScroll < 350 ){
+    } else if (pageScroll > 150 && pageScroll < 350 ){
        $(".DivNavHeaderProgramme").removeClass("active");
        $(".DivNavHeaderAccueil").removeClass("active");
 
