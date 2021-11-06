@@ -107,8 +107,13 @@
  
  #IdVideos{
   background-image: url("../img/groupe.jpg");
-
  }
+
+
+ #IdTrombinoscope{
+  background-image: url("../img/arbre.jpeg");
+ }
+
  .cover-body {
    display: -ms-flexbox;
    /*display: flex;*/
