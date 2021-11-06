@@ -1,13 +1,8 @@
-var url = window.location.href;
-let element;
-if(url.includes('presentations')){
-    element = document.getElementById("presentations");
-}else if(url.includes('evenements')){
-    element = document.getElementById("evenements");
-}else if(url.includes('contact')){
-    element = document.getElementById("contact");
-}else {
-    element = document.getElementById("home");
-}
-
-element.style.color = 'white';
+$(window).on("scroll", function() {
+    if($(window).scrollTop() > 50) {
+        $(".ClassNavHeaderAccueil").addClass("active");
+    } else {
+        //remove the background property so it comes transparent again (defined in your css)
+       $(".ClassNavHeaderAccueil").removeClass("active");
+    }
+});
