@@ -13,7 +13,6 @@
    display: none;
  }
  
- 
  /* Hide scrollbar for IE, Edge and Firefox */
  body {
    -ms-overflow-style: none;  /* IE and Edge */
@@ -30,7 +29,9 @@
  @viewport {
    width: device-width;
  }
- 
+ #content {
+  width:100%;
+}
  /* Custom default button */
  .btn-secondary,
  .btn-secondary:hover,
@@ -68,6 +69,7 @@
     text-align: center;
     font-weight: 700;
     line-height: 2rem;
+    top: 10%;
   }
   
   .text {
@@ -111,6 +113,7 @@
   .DivPersonneTrombi{
     background-image: url("../img/racineProfil.png");
     background-repeat: no-repeat;
+    margin: 0px;
     background-size: 320px;
     background-position:center;
   }
@@ -118,14 +121,14 @@
   .DivPersonneImpTrombi{
     background-image: url("../img/racineProfil.png");
     background-repeat: no-repeat;
-    background-size: 500px;
+    background-size: 80%;
     background-position:center;
   }
 
   .DivPersonneImpTrombiVP{
     background-image: url("../img/racineProfil.png");
     background-repeat: no-repeat;
-    background-size: 500px;
+    background-size: 400px;
     background-position:center;
 
     margin-left: 20%;
@@ -134,7 +137,7 @@
   
 
   #IdTrombinoscope{
-    background-image: url("../img/grass.png");
+    background:rgb(255, 255, 255);
     top: 100px;
   }
 
@@ -364,11 +367,11 @@
  .TextPhotoTrombiImportant{
     position: absolute;
     text-align: center;
-    top: 100px;
-    left: 170px;
+    top: 20%;
+    left: 25%;
     margin: 0 auto;
-    width: 230px;
-    height: 50px;
+    width: 50%;
+    height: 50%;
 
     font-size: 25px;
   }
@@ -381,18 +384,18 @@
   .TextPhotoTrombi{
     position: absolute;
     text-align: center;
+    top: 20%;
+    left: 30%;
     margin: 0 auto;
-    width: 230px;
-    height: 200px;
-    top: 80px;
-    left: 20%;
+    width: 40%;
+    height: 40%;
 
     font-size: 15px;
 
    }
 
   .containerTrombi img:hover /* fade out on hover */ {
-    opacity:30%;
+    opacity:10%;
   }
  
  #Programme h2{
@@ -531,9 +534,10 @@
   font-size: 50px;
 }
 .ContainerSponsors{
+  align-self: center;
   position:relative;
   top: 100px;
-  left: -10%;
+  left: 0%;
 
 }
 .ContainerSponsors .container{
@@ -603,7 +607,45 @@
 
 }
 
-@media (min-width: 1000px) and (max-width: 500px) {
+.LogoImageInactive img{
+  visibility: hidden;
+  width: 10px;
+}
+.LogoImageActive img{
+  visibility: visible;
+}
+.ClassNavbar a{
+  font-size: 20px;
+}
+.TitreImage{
+  position:relative;
+}
+
+.NavIcons{
+  position: relative;
+  margin-left: 35px;
+  margin-top: 5px;
+  width: 200px;
+  left: 50px;
+}
+
+.NavIconsInit{
+  position: relative;
+  margin-left: 0px;
+  width: 100px;
+  left: 50px;
+}
+#navbarSupportedContent{
+  left: -20px;
+}
+.navbar-nav{
+  align-items: center;
+}
+.PhotoTrombi{
+  top: 30%;
+}
+
+@media (min-width: 1px) and (max-width: 1000px) {
 
   .navbar-expand-custom {
     flex-direction: row;
@@ -629,5 +671,21 @@
   }
   .navbar-expand-custom .navbar-toggler {
     display: none;
+  }
+
+  .NavIcons{
+    position: relative;
+    margin-left: 0px;
+    margin-top: 5px;
+    width: 200px;
+    left: 10px;
+  }
+
+  .NavIconsInit{
+    position: relative;
+    margin-left: 0px;
+    margin-top: 5px;
+    width: 200px;
+    left: 10px;
   }
 }
