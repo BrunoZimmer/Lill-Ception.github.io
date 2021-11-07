@@ -2,6 +2,10 @@
  * Globals
  */
  /* Links */
+ @font-face {
+   font-family: "Fedora";
+   src: url(./SF\ Fedora.ttf);
+ }
  a,
  a:focus,
  a:hover {
@@ -645,6 +649,9 @@
   top: 30%;
 }
 
+h2{
+  font-family: 'Fedora';
+}
 @media (min-width: 1px) and (max-width: 1000px) {
 
   .navbar-expand-custom {
