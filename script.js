@@ -17,17 +17,17 @@ $(window).on("scroll", function() {
         $(".DivNavHeaderVideos").removeClass("active");
 
         $(".DivNavHeaderProgramme").addClass("active");
-    } else if (pageScroll > 350 && pageScroll < 450 ){
+    } else if (pageScroll > 450 && pageScroll < 550 ){
         $(".DivNavHeaderTrombinoscope").removeClass("active");
         $(".DivNavHeaderVideos").removeClass("active");
 
         $(".DivNavHeaderVideos").addClass("active");
-    } else if (pageScroll > 350 && pageScroll < 450 ){
+    } else if (pageScroll > 550 && pageScroll < 650 ){
         $(".DivNavHeaderTrombinoscope").removeClass("active");
         $(".DivNavHeaderVideos").removeClass("active");
 
         $(".DivNavHeaderVideos").addClass("active");
-    } else if (pageScroll > 350 && pageScroll < 450 ){
+    } else if (pageScroll > 650 && pageScroll < 750 ){
         $(".DivNavHeaderTrombinoscope").removeClass("active");
         $(".DivNavHeaderVideos").removeClass("active");
         
@@ -48,7 +48,6 @@ $(window).on("scroll", function() {
 
         $("#navIcons").removeClass("NavIcons");
         $("#navIcons").addClass("NavIconsInit");
-        width="130"
     } else{
         $(".TitreImage").removeClass("LogoImageInactive");
         $(".TitreImage").addClass("LogoImageActive");
