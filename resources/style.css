@@ -368,6 +368,8 @@
     position:relative;
     text-align: center;
     font-size: 30px;
+    margin-bottom: 10%;
+    top: 15%;
   }
 
  .TextPhotoTrombiImportant{
@@ -396,7 +398,7 @@
     width: 40%;
     height: 40%;
 
-    font-size: 15px;
+    font-size: 20px;
 
    }
 
@@ -507,21 +509,22 @@
 
 }
 
-
 .TextTitleVideo{
   position:relative;
   top: 30px;
   margin-bottom: 50px;
   left: 100px;
   font-size: 50px;
+  color:white;
 }
 
 .TextTitleEvenements{
   position:relative;
-  top: 100px;
+  top: 140px;
   margin-bottom: 50px;
   left: 20%;
   font-size: 50px;
+  color:white;
 }
 
 .ImgEvenements{

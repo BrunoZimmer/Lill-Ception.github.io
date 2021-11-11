@@ -506,6 +506,8 @@
   font-size: 50px;
 
 }
+
+
 .TextTitleVideo{
   position:relative;
   top: 30px;
@@ -513,15 +515,6 @@
   left: 100px;
   font-size: 50px;
   color:white;
-}
-
-
-.TextTitleVideo{
-  position:relative;
-  top: 30px;
-  margin-bottom: 50px;
-  left: 100px;
-  font-size: 50px;
 }
 
 .TextTitleEvenements{
