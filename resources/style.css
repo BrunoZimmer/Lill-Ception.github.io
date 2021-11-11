@@ -532,7 +532,20 @@
   height: 100%;
   top: -100px;
   margin-bottom: 100px;
+}
 
+.ContainerAccueil{
+  background-image: url("../img/ecole_centrale.jpg");
+  background-position:center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  margin-right: 0px;
+  margin-left: 0px;
+
+  color: white;
+  font-family:Arial, Helvetica, sans-serif;
+  font-style: bold;
+  font-weight: 800;
 }
 
 .TextTitleSponsors{
