@@ -6,32 +6,31 @@ $(window).on("scroll", function() {
         $(".DivNavHeaderTrombinoscope").removeClass("active");
 
         $(".DivNavHeaderAccueil").addClass("active");
-    } else if (pageScroll > 250 && pageScroll < 350 ){
+    } else if (pageScroll > 400 && pageScroll < 3700 ){
        $(".DivNavHeaderProgramme").removeClass("active");
        $(".DivNavHeaderAccueil").removeClass("active");
 
        $(".DivNavHeaderTrombinoscope").addClass("active");
     
-    } else if (pageScroll > 350 && pageScroll < 450 ){
+    } else if (pageScroll > 3700 && pageScroll < 4900 ){
         $(".DivNavHeaderTrombinoscope").removeClass("active");
         $(".DivNavHeaderVideos").removeClass("active");
 
         $(".DivNavHeaderProgramme").addClass("active");
-    } else if (pageScroll > 450 && pageScroll < 550 ){
-        $(".DivNavHeaderTrombinoscope").removeClass("active");
-        $(".DivNavHeaderVideos").removeClass("active");
+    } else if (pageScroll > 4900 && pageScroll < 5600 ){
+        $(".DivNavHeaderProgramme").removeClass("active");
+        $(".DivNavHeaderEvenements").removeClass("active");
 
         $(".DivNavHeaderVideos").addClass("active");
-    } else if (pageScroll > 550 && pageScroll < 650 ){
-        $(".DivNavHeaderTrombinoscope").removeClass("active");
+    } else if (pageScroll > 5600 && pageScroll < 6400 ){
         $(".DivNavHeaderVideos").removeClass("active");
+        $(".DivNavHeaderSponsors").removeClass("active");
 
-        $(".DivNavHeaderVideos").addClass("active");
-    } else if (pageScroll > 650 && pageScroll < 750 ){
-        $(".DivNavHeaderTrombinoscope").removeClass("active");
-        $(".DivNavHeaderVideos").removeClass("active");
+        $(".DivNavHeaderEvenements").addClass("active");
+    } else if (pageScroll > 6400 && pageScroll < 8000 ){
+        $(".DivNavHeaderEvenements").removeClass("active");
         
-        $(".DivNavHeaderVideos").addClass("active");
+        $(".DivNavHeaderSponsors").addClass("active");
     } 
 });
 

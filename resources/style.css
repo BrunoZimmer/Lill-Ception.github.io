@@ -341,6 +341,7 @@
   .EvenementRow{
     position: relative;
     margin-top: 150px;
+    margin-bottom: 50px;
   }
 
   .TrombiRow{
@@ -392,6 +393,10 @@
   .TextTitleAccueil{
     margin-top: 100px;
     font-size: 40px;
+  }
+  .ContainerAccueilIntern{
+    margin-left: 10%;
+    margin-right: 10%;
   }
 
   .TextPhotoTrombi{
@@ -528,7 +533,7 @@
   top: 140px;
   margin-bottom: 50px;
   font-size: 50px;
-  color:white;
+  color:black;
 }
 
 #ImgEvenement{
