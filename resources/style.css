@@ -606,14 +606,6 @@
   margin-bottom: 100px;
 }
 
-#over {
-  background-image: url("../images/iphone5_hollow_750x380.png");
-  background-repeat: no-repeat;
-  height: 380px;
-  width: 750px;
-  margin: 0 auto 30px;
-  position: relative;
-}
 .iframe {
   position: absolute;
   top: 10%;
@@ -673,6 +665,7 @@
 }
 .TitreImage{
   position:relative;
+  margin-top: 10px;
 }
 
 .NavIcons{
@@ -725,6 +718,55 @@ h2{
 
 @media (min-width: 1px) and (max-width: 1000px) {
 
+  .DivPersonneImpTrombiVP{
+    margin-left: 0px;
+  }
+
+  .ContainerSponsors{
+    left: 0%;
+  }
+
+  .navbar-expand-custom {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+  }
+  .navbar-expand-custom .navbar-nav {
+    flex-direction: row;
+  }
+  .navbar-expand-custom .dropdown-menu {
+    position: absolute;
+  }
+  .navbar-expand-custom .nav-link {
+    padding-right: .5rem;
+    padding-left: .5rem;
+  }
+  .navbar-expand-custom > .container {
+    flex-wrap: nowrap;
+  }
+  .navbar-expand-custom .navbar-collapse {
+    display: flex!important;
+    flex-basis: auto;
+  }
+  .navbar-expand-custom .navbar-toggler {
+    display: none;
+  }
+
+  .NavIcons{
+    position: relative;
+    margin-left: 0px;
+    margin-top: 5px;
+    width: 20px;
+    left: 0px;
+  }
+
+  .NavIconsInit{
+    position: relative;
+    margin-left: 0px;
+    margin-top: 5px;
+    width: 200px;
+    left: 0px;
+  }
 }
 
 
