@@ -101,7 +101,12 @@
     height: 100%; 
   }
 
- 
+  #IdVideos{
+    background-image: url("../img/groupe.jpg");
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
 
   .DivPersonneTrombi{
     background-image: url("../img/grassFond.png");
