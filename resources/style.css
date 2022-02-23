@@ -3,7 +3,23 @@
  */
  /* Links */
 
+ html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+  }
+
+  .BoxSize{
+    
+    box-sizing: inherit;
+  }
  
+
  @font-face {
    font-family: "Fedora";
    src: url(./SF\ Fedora.ttf);
@@ -33,8 +49,9 @@
    width: device-width;
  }
  @viewport {
-   width: device-width;
- }
+  width: device-width ;
+  zoom: 1.0 ;
+} 
  #content {
   width:100%;
 }
@@ -59,7 +76,7 @@
     margin-top: 8px;
     vertical-align: middle;
     width: 65%;
-    border-radius: 100%;
+    border-radius: 0%;
     margin-bottom: 5px;
     opacity: 1;
     transition: .6s ease;
@@ -84,7 +101,7 @@
     transform: translate(-50%, -50%);
     opacity: 0;
     transition: .6s ease;
-    border: 1px solid;
+    /* border: 1px solid; */
   }
   
   .gallery-image:hover .text {
@@ -105,7 +122,7 @@
     background-image: url("../img/groupe.jpg");
     background-position:center;
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
   }
 
   .DivPersonneTrombi{
@@ -141,7 +158,7 @@
 
  .cover-body {
    display: -ms-flexbox;
-   /*display: flex;*/
+   display: flex;
    text-shadow: 0 .05rem .1rem #5A3400;
    box-shadow: inset 0px 80px 6rem #5A3400;
  }
@@ -260,7 +277,7 @@
  }
  
  .card{
-   border-radius: 4px;
+   /* border-radius: 4px; */
    box-shadow: 5px 6px 10px rgba(0,0,0,.2);
    transition: .2s transform;
    cursor: pointer;
@@ -358,7 +375,7 @@
     position:relative;
     top: 100px;
     margin-bottom: 50px;
-    left: 100px;
+    margin-left: 0px;
     font-size: 50px;
   }
   
@@ -420,7 +437,7 @@
   */
  .footPage {
    color: #000;
-   border-top: 1px solid rgba(255, 255, 255, 0.5);
+   /* border-top: 1px solid rgba(255, 255, 255, 0.5); */
  }
  
  .footPage p{
@@ -452,7 +469,7 @@
    left: 50%;
    background-color: #5A3400;
    padding: 1rem;
-   border-radius: 10px;
+   /* border-radius: 10px; */
    transform: translate(-50%, -30%);
    cursor: pointer;
  }
@@ -500,7 +517,6 @@
 .ImgProgramme{
   width: 100%;
   height: 100%;
-  margin-left: 1%;
   margin-top: 5px;
   margin-bottom: 5px;
 }
@@ -514,9 +530,9 @@
 
 .TextTitleProgramme{
   position:relative;
-  top: 100px;
+  top: 10px;
   margin-bottom: 50px;
-  left: 100px;
+  margin-left: 100px;
   font-size: 50px;
 
 }
@@ -525,7 +541,7 @@
   position:relative;
   top: 30px;
   margin-bottom: 50px;
-  left: 100px;
+  margin-left: 100px;
   font-size: 50px;
   color:white;
 }
@@ -548,7 +564,7 @@
 .ContainerAccueilPhoto{
   background-position:center;
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
   margin-right: 0px;
   margin-left: 0px;
 
@@ -562,7 +578,7 @@
 .ContainerAccueil{
   background-position:center;
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
   margin-right: 0px;
   margin-left: 0px;
 
@@ -576,7 +592,7 @@
   position:relative;
   top: 100px;
   margin-bottom: 50px;
-  left: 100px;
+  margin-left: 100px;
   font-size: 50px;
 }
 .ContainerSponsors{
@@ -605,7 +621,7 @@
 }
 
 .VideoContainer{
-  width: 900px;
+  width: 100px;
   height: 660px;
 }
 
@@ -640,7 +656,7 @@
     height: 50px;
 
     font-size: 25px;
-    left: 30%;
+    left: 0%;
   }
 
 }
@@ -709,47 +725,6 @@ h2{
 
 @media (min-width: 1px) and (max-width: 1000px) {
 
-  .navbar-expand-custom {
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: flex-start;
-  }
-  .navbar-expand-custom .navbar-nav {
-    flex-direction: row;
-  }
-  .navbar-expand-custom .dropdown-menu {
-    position: absolute;
-  }
-  .navbar-expand-custom .nav-link {
-    padding-right: .5rem;
-    padding-left: .5rem;
-  }
-  .navbar-expand-custom > .container {
-    flex-wrap: nowrap;
-  }
-  .navbar-expand-custom .navbar-collapse {
-    display: flex!important;
-    flex-basis: auto;
-  }
-  .navbar-expand-custom .navbar-toggler {
-    display: none;
-  }
-
-  .NavIcons{
-    position: relative;
-    margin-left: 0px;
-    margin-top: 5px;
-    width: 200px;
-    left: 10px;
-  }
-
-  .NavIconsInit{
-    position: relative;
-    margin-left: 0px;
-    margin-top: 5px;
-    width: 200px;
-    left: 10px;
-  }
 }
 
 
