@@ -59,7 +59,6 @@
     margin-top: 8px;
     vertical-align: middle;
     width: 65%;
-    border: 0px solid white;
     border-radius: 100%;
     margin-bottom: 5px;
     opacity: 1;
@@ -102,12 +101,7 @@
     height: 100%; 
   }
 
-  #IdVideos{
-    background-image: url("../img/groupe.jpg");
-    background-position:center;
-    background-repeat: no-repeat;
-    background-size: 100%;
-  }
+ 
 
   .DivPersonneTrombi{
     background-image: url("../img/grassFond.png");
@@ -411,9 +405,6 @@
 
    }
 
-  .containerTrombi img:hover /* fade out on hover */ {
-    opacity:10%;
-  }
  
  #Programme h2{
    color: black;
